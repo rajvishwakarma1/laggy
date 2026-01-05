@@ -6,6 +6,8 @@ Simulate bad networks. Break your app before users do.
 npx laggy --preset slow-3g npm test
 ```
 
+![laggy demo](scripts/demo.svg)
+
 ```
 $ laggy --list-presets
 
