@@ -6,6 +6,24 @@ Simulate bad networks. Break your app before users do.
 npx laggy --preset slow-3g npm test
 ```
 
+```
+$ laggy --list-presets
+
+Available presets:
+
+  5g           Fast 5G connection
+               latency: 10ms, jitter: 5ms
+  4g           Standard 4G/LTE
+               latency: 50ms, jitter: 20ms
+  slow-3g      Slow 3G connection
+               latency: 400ms, jitter: 100ms, fail: 2%, timeout: 1%
+  flaky        Unreliable connection with random failures
+               latency: 200ms, jitter: 300ms, fail: 30%, timeout: 10%
+  chaos        Maximum chaos for stress testing
+               latency: 500ms, jitter: 1500ms, fail: 20%, timeout: 10%
+  ...and 6 more
+```
+
 ## Why?
 
 Your app works fine on localhost. But what about:
